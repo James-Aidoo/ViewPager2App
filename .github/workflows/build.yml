@@ -24,8 +24,8 @@ jobs:
     steps:
       - name: Checkout the code
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
-      - uses: actions/checkout@v2
+        uses: actions/checkout@v2
 
       # Runs the gradlew script to build the app
       - name: Build the app
-      - run: ./gradlew build
+        run: ./gradlew build
