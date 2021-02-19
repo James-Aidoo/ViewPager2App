@@ -25,6 +25,10 @@ jobs:
       - name: Checkout the code
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
         uses: actions/checkout@v2
+      
+      # Make the gradlew script executable
+      - name: Make gradlew executable
+        run: chmod +x ./gradlew
 
       # Runs the gradlew script to build the app
       - name: Build the app
