@@ -28,4 +28,4 @@ jobs:
 
       # Runs the gradlew script to build the app
       - name: Build the app
-        run: ./gradlew build
+      - run: ./gradlew build
