@@ -27,11 +27,11 @@ class MainActivity : AppCompatActivity() {
         binding.vpCarousel.getChildAt(0).overScrollMode = RecyclerView.OVER_SCROLL_NEVER
 
         val pageTransformer = CompositePageTransformer().apply {
-            addTransformer(MarginPageTransformer(50))
-            addTransformer(ViewPager2.PageTransformer { page, position ->
+            addTransformer(MarginPageTransformer(40))
+            addTransformer { page, position ->
                 val r = 1 - abs(position)
-                page.scaleY = 0.85f + r *0.15f
-            })
+                page.scaleY = 0.85f + r * 0.15f
+            }
         }
         binding.vpCarousel.setPageTransformer(pageTransformer)
 
