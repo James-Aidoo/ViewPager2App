@@ -2,3 +2,5 @@
 
 # ViewPager2App
 An android app demonstrating basic use of the ViewPager2 library with Page transformations.
+
+![] (Screenrecorder-2021-02-21-19-31.gif)
